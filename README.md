@@ -10,9 +10,7 @@ Ding, X., and Ma, R. (2024+) Kernel Spectral Joint Embeddings for High-Dimension
 
 # Content
 
-The folder /data contains the example datasets analyzed in the paper.
-
-The folder /code contains R scripts for numerical simulations and the analyses of the example datasets.
+The folder /code contains R scripts that reproduce our numerical simulations and analyses of the example single-cell omic datasets.
 
 # System Requirements
 
