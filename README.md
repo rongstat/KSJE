@@ -1,24 +1,24 @@
-# Kernel Eigenfunction Embeddings for High-Dimensional Data
+# Kernel Spectral Joint Embeddings for High-Dimensional Data
 
 
-We propose a kernel-spectral embedding algorithm for learning low-dimensional nonlinear structures from high-dimensional and noisy observations, where the datasets are assumed to be sampled from an intrinsically low-dimensional manifold and corrupted by high-dimensional noise. The algorithm employs an adaptive bandwidth selection procedure which does not rely on prior knowledge of the underlying manifold. The obtained low-dimensional embeddings can be further utilized for downstream purposes such as data visualization, clustering and prediction. Our method is theoretically justified and practically interpretable. We establish the convergence of the final embeddings to their noiseless counterparts when the dimension and size of the samples are comparably large, and characterize the effect of the signal-to-noise ratio on the rate of convergence and phase transition. We also prove convergence of the embeddings to the eigenfunctions of an integral operator defined by the kernel map of some reproducing kernel Hilbert space capturing the underlying nonlinear structures. Numerical simulations and analysis of three real datasets show the superior empirical performance of the proposed method, compared to many existing methods, on learning various manifolds in diverse applications.
+We develop a kernel spectral method that achieves joint nonlinear embeddings of two independently observed high-dimensional noisy datasets. The proposed method automatically captures and leverages the possibly shared low-dimensional structures across datasets to enhance embedding quality. The obtained low-dimensional embeddings can be utilized for many downstream tasks such as simultaneous clustering, data visualization, and denoising.  The proposed method is justified by rigorous theoretical analysis, which guarantees its statistical consistency in relation to the underlying signal structures, and provides  explicit geometric interpretations of the low-dimensional embeddings. 
 
 The method is based on the paper:
 
-Ding, X., and Ma, R. (2023) Learning Low-Dimensional Nonlinear Structures from High-Dimensional Noisy Data: An Integral Operator Approach. **Annals of Statistics** 51(4), 1744-1769. https://arxiv.org/pdf/2203.00126.
+Ding, X., and Ma, R. (2024+) Kernel Spectral Joint Embeddings for High-Dimensional Noisy Datasets Using Duo-Landmark Integral Operators. [https://arxiv.org/pdf/2203.00126.](https://arxiv.org/pdf/2405.12317)
 
 
 # Content
 
 The folder /data contains the example datasets analyzed in the paper.
 
-The folder /code contains R scripts for analyzing the example datasets.
+The folder /code contains R scripts for numerical simulations and the analyses of the example datasets.
 
 # System Requirements
 
-The meta-visualization package requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
+The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
 
 RAM: 16+ GB
 CPU: 4+ cores, 3.3+ GHz/core
 
-The R implementation of the method is tested under R version 4.1.1, and requires the R packages: `rARPACK`,`Rfast`,`rARPACK`,`dimRed`,`cluster`,`ggplot2`,`lle`,`Seurat`,`TSCAN`,`SCORPIUS`.
+The R implementation of the method is tested under R version 4.2.3, and requires the R packages: `RSpectra`,`Rfast`,`ggplot2`,`fossil`,`Seurat`,`SeuratData`,`uwot`,`HDF5Array`,`zellkonverter`,`cluster`.
