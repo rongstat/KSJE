@@ -1,16 +1,16 @@
-# Kernel Spectral Joint Embeddings for High-Dimensional Data
+# Duo-Landmark Joint Embeddings for High-Dimensional Data
 
 
-We develop a kernel spectral method that achieves joint nonlinear embeddings of two independently observed high-dimensional noisy datasets. The proposed method automatically captures and leverages the possibly shared low-dimensional structures across datasets to enhance embedding quality. The obtained low-dimensional embeddings can be utilized for many downstream tasks such as simultaneous clustering, data visualization, and denoising.  The proposed method is justified by rigorous theoretical analysis, which guarantees its statistical consistency in relation to the underlying signal structures, and provides  explicit geometric interpretations of the low-dimensional embeddings. 
+We develop a kernel spectral method that achieves joint embeddings of two independently observed high-dimensional noisy datasets. The proposed method automatically captures and leverages shared low-dimensional structures across datasets to enhance embedding quality. The obtained low-dimensional embeddings can be utilized for downstream tasks such as simultaneous clustering, data visualization, and denoising. The proposed method is justified by rigorous theoretical analysis, which guarantees its consistency in capturing the signal structures, and provides a geometric interpretation of the embeddings. 
 
 The method is based on the paper:
 
-Ding, X., and Ma, R. (2024+) Kernel Spectral Joint Embeddings for High-Dimensional Noisy Datasets Using Duo-Landmark Integral Operators. [https://arxiv.org/pdf/2203.00126.](https://arxiv.org/pdf/2405.12317)
+Ding, X., and Ma, R. (2025+) Kernel Spectral Joint Embeddings for High-Dimensional Noisy Datasets Using Duo-Landmark Integral Operators. *Journal of the American Statistical Association* [https://arxiv.org/pdf/2203.00126.](https://arxiv.org/pdf/2405.12317)
 
 
 # Content
 
-The folder /code contains R scripts that reproduce our numerical simulations and analyses of the example single-cell omic datasets.
+The folder /code contains R scripts that reproduce our numerical simulations and analyses of the example single-cell omic datasets. We also provide the R function (see `main_function.R`) that implement our proposed algorithm.
 
 # System Requirements
 
