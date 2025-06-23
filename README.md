@@ -20,7 +20,13 @@ The folder /code contains R scripts that reproduce our numerical simulations and
 
 `gamma1gamma2.R`: R script for embedding index set sensitivity analysis;
 
-`unequal_sample_size.R`: R script for sample size unbalance sensitivity analysis.
+`unequal_sample_size.R`: R script for sample size unbalance sensitivity analysis;
+
+`simulation_runtime.R`: R script for running time evaluations;
+
+`simu_torus_sensitivity.R`: R script for bandwith hyperparameter and latent dimension sensitivity analyses;
+
+`counter_expr.R`: R script for the counter examples presented in Section A of the Supplement.
 
 
 # System Requirements
