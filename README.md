@@ -12,6 +12,17 @@ Ding, X., and Ma, R. (2025+) Kernel Spectral Joint Embeddings for High-Dimension
 
 The folder /code contains R scripts that reproduce our numerical simulations and analyses of the example single-cell omic datasets. We also provide the R function (see `main_function.R`) that implement our proposed algorithm.
 
+`simulation_biclustering.R`: R script for simulation part 1: simultaneous clustering;
+
+`simulation_manifold_learning.R`: R script for simulation part 2: noisy manifold learning;
+
+`real_data_analysis.R`: R script for real data analysis;
+
+`gamma1gamma2.R`: R script for embedding index set sensitivity analysis;
+
+`unequal_sample_size.R`: R script for sample size unbalance sensitivity analysis.
+
+
 # System Requirements
 
 The method requires only a standard computer with enough RAM to support the operations defined by a user. For optimal performance, we recommend a computer with the following specs:
