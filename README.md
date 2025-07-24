@@ -42,6 +42,6 @@ The R implementation of the method is tested under R version 4.2.3, and requires
 
 # Quick Guide
 
-For a quick guide to our method implementation in R, please check out https://rongstat.github.io/KSJE_guide.io/tutorial.html.
+For a **quick guide** to our method implementation in R, please check out https://rongstat.github.io/KSJE_guide.io/tutorial.html.
 
-
+For further questions and inquiries, please contact Rong Ma (rongma@hsph.harvard.edu).
