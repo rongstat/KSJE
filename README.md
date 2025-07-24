@@ -39,3 +39,9 @@ RAM: 16+ GB
 CPU: 4+ cores, 3.3+ GHz/core
 
 The R implementation of the method is tested under R version 4.2.3, and requires the R packages: `RSpectra`,`Rfast`,`ggplot2`,`fossil`,`Seurat`,`SeuratData`,`uwot`,`HDF5Array`,`zellkonverter`,`cluster`.
+
+# Quick Guide
+
+For a quick guide to our method implementation in R, please check out https://rongstat.github.io/KSJE_guide.io/tutorial.html.
+
+
