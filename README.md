@@ -5,7 +5,7 @@ We develop a kernel spectral method that achieves joint embeddings of two indepe
 
 The method is based on the paper:
 
-Ding, X., and Ma, R. (2025+) Kernel Spectral Joint Embeddings for High-Dimensional Noisy Datasets Using Duo-Landmark Integral Operators. *Journal of the American Statistical Association* [https://arxiv.org/pdf/2203.00126.](https://arxiv.org/pdf/2405.12317)
+[Xiucai Ding](https://xcding1212.github.io) and [Rong Ma](https://sites.google.com/site/rongmastat/home) (2025+) [Kernel Spectral Joint Embeddings for High-Dimensional Noisy Datasets Using Duo-Landmark Integral Operators](https://arxiv.org/pdf/2405.12317). *Journal of the American Statistical Association* 
 
 
 # Content
