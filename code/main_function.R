@@ -12,11 +12,8 @@ library(pcaPP)
 #Gamma - a collecting of integers smaller than n1 and n2, being the index set of latent embedding. We recommend choosing Gamma=c(1:(r+1)) where r is the desired latent dimension.
 
 DL.embed <- function(X,Y, w=0.5, Gamma=c(1:3)){
-  dist.mat = Dist(t(cbind(data.Y1, data.Y2)))
-  cross.dist = as.matrix(dist.mat)[1:dim(data.Y1)[2], (dim(data.Y1)[2]+1):(dim(data.Y1)[2]+dim(data.Y2)[2])]
-  
-  dist.mat = Dist(t(cbind(data.Y1, data.Y2)))
-  cross.dist = as.matrix(dist.mat)[1:dim(data.Y1)[2], (dim(data.Y1)[2]+1):(dim(data.Y1)[2]+dim(data.Y2)[2])]
+  dist.mat = Dist(rbind(data.Y1, data.Y2))
+  cross.dist = as.matrix(dist.mat)[1:dim(data.Y1)[1], (dim(data.Y1)[1]+1):(dim(data.Y1)[1]+dim(data.Y2)[1])]
   
   K.mat = exp(-cross.dist^2/quantile(cross.dist,0.5)^2)  
   prop.svd = svds(K.mat, k=max(Gamma))
