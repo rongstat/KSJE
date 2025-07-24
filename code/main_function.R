@@ -18,8 +18,8 @@ DL.embed <- function(X,Y, w=0.5, Gamma=c(1:3)){
   K.mat = exp(-cross.dist^2/quantile(cross.dist,0.5)^2)  
   prop.svd = svds(K.mat, k=max(Gamma))
   
-  out1= sqrt(dim(prop.svd$v[,Gamma])[1])*prop.svd$v[,Gamma] %*% diag(prop.svd$d[1:Gamma])^(1/2)
-  out2= sqrt(dim(prop.svd$u[,Gamma])[1])*prop.svd$u[,Gamma] %*% diag(prop.svd$d[1:Gamma])^(1/2)
+  out1= sqrt(dim(prop.svd$v[,Gamma])[1])*prop.svd$v[,Gamma] %*% diag(prop.svd$d[Gamma])^(1/2)
+  out2= sqrt(dim(prop.svd$u[,Gamma])[1])*prop.svd$u[,Gamma] %*% diag(prop.svd$d[Gamma])^(1/2)
   
   return(list(embed.data1=out1, embed.data2=out2))
 }
